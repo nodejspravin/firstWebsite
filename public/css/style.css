@@ -1,0 +1,55 @@
+body {
+    color : #333333;
+    font-family: fantasy;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    margin-top: 32px;
+    border-top: #eeeeee 1px solid;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+h1 {
+
+    font-size: 44px;
+}
+
+header a {
+    color: skyblue;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 250px;
+}
+
+input {
+    
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    background: #888888;
+    cursor: pointer;
+    border: solid 1px #888888;
+    color: white;
+    padding: 8px;
+}
