@@ -6,6 +6,8 @@ const forecast = require("./utils/forecast")
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 const publicDirName = path.join(__dirname, '../public')
 const hbsDirName = path.join(__dirname, '../template/views')
 const partialsPath = path.join(__dirname, "../template/partials")
@@ -83,6 +85,6 @@ app.get("*", (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('server is running on port 3000')
+app.listen(port, () => {
+    console.log('server is running on port ' + port)
 })
